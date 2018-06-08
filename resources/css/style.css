@@ -25,8 +25,8 @@ nav {
   background-color: cadetblue;
   color: white;
   font-size: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1rem 2rem;
+  align-items: center;
 }
 
 .title {
@@ -45,7 +45,11 @@ nav img {
 }
 
 .webpages li {
-  padding: 1rem 1rem;
+  padding: 0 1rem;
+}
+
+.menu li {
+  display: none;
 }
 
 .flexcontainer {
@@ -66,6 +70,50 @@ nav img {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
+}
+
+@media only screen and (max-width:1024px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .quote {
+    margin-top: 5rem;
+    padding: 1.5rem 4rem;
+    margin-right: 2rem;
+  }
+
+  .quote span {
+    font-size: 1.33rem;
+  }
+}
+
+
+@media only screen and (max-width:700px){
+  .webpages {
+    display: none;
+  }
+
+  .menu li {
+    display: block;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width:560px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .title span {
+    display: none;
+  }
 }
 
 /* Main section Unique Selling Points*/
