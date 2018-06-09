@@ -114,6 +114,19 @@ nav img {
   .title span {
     display: none;
   }
+
+  .quote {
+    width: 100%;
+    margin-top: 9rem;
+    padding: 1rem 4rem;
+    margin-right: 0rem;
+    text-align: center;
+  }
+
+  .quote span {
+    font-size: 1rem;
+  }
+
 }
 
 /* Main section Unique Selling Points*/
@@ -121,6 +134,7 @@ nav img {
 .USP {
   display: flex;
   justify-content: center;
+
 }
 
 .point {
@@ -143,6 +157,26 @@ nav img {
   width: 3.5rem;
 }
 
+
+@media only screen and (max-width:560px) {
+  .USP {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .point {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+
+  .point img {
+    margin-bottom: 0.77rem;
+  }
+}
+
 /*Main section Info*/
 
 .info {
@@ -156,6 +190,7 @@ nav img {
   margin-bottom: 5rem;
 }
 
+
 .textbanner {
   background-color: cadetblue;
   color: white;
@@ -167,8 +202,33 @@ nav img {
 }
 
 .box p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.2;
+}
+
+@media only screen and (max-width:560px) {
+  .info {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .textbanner {
+    width: 100%;
+    padding: 0.6rem 0rem;
+    text-align: center;
+  }
+
+  .box p {
+    font-size: 0.77rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
 }
 
 /* Footer section*/
@@ -189,4 +249,14 @@ footer img {
 
 footer span {
   font-size: 1rem;
+}
+
+@media only screen and (max-width:560px){
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
 }
